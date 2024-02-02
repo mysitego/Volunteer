@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar and Carousel Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .navbar {
+      background-color: rgba(139, 190, 243, 0.957); /* Transparent background */
+      padding: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item2  {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-item2:hover {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transform: scale(1.1);
+      border-radius: 10px;
+    }
+
+    .gallery-item .image-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      transition: transform 0.3s;
+      border-radius: 10px;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+      border-radius: 10px;
+     
+    }
+
+    .gallery-item:hover .image-name {
+      width: 100%;
+      height: 300px;
+      transform: translate(-50%, -50%) scale(1);
+      border-radius: 10px;
+    }
+  
+  </style>
+</head>
+
+<body dir="rtl">
+  <nav class="navbar navbar-expand-lg shadow-0  fixed-top">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="images/logovirsion.png" width="100px" alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+      </ul>
+    </div>
+    <a class="navbar-brand" href="#"><img src="images/logovirsion.png" width="100px" alt=""></a>
+  </nav>
+
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExample" data-slide-to="1"></li>
+      <li data-target="#carouselExample" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/Carousel_Placeholder1.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Carousel_Placeholder2.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Carousel_Placeholder3.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container p-5 bg-light">
+    <div class="section-text text-right row">
+      <div class="col-lg-6 col-md-12">
+        <h2 class="p-3 border rounded mb-3">حقوق المتطوع:</h2>
+        <ol>
+          <li>العمل في أماكن آمنة تتميّز بالمواصفات الصحية.</li>
+          <li>تقديم الاحترام والثقة للمتطوع.</li>
+          <li>حماية البيانات الشخصية للمتطوع.</li>
+          <li>تزويد المتطوع توصيف واضح للدور والمهام المطلوبة والفترة الزمنية والشخص المسؤول للرجوع له.</li>
+          <li>شهادة تطوع وخبرة موضح فيها اسم المنظمة تتضمن اسم الفرصة التطوعية وعدد الساعات التطوعية وفترة تنفيذها.</li>
+          <li>تسجيل الساعات التطوعية المكتملة بمنصة العمل التطوعي.</li>
+          <li>توفير الموارد المطلوبة لتحقيق الهدف من البرنامج التطوعي.</li>
+          <li>التدريب والتأهيل عندما يقتضي البرنامج التطوعي مؤهلات معينة.</li>
+          <li>عدم تكليفه بعمل مخالف للشريعة الإسلامية أو يتعارض مع واجباته الشرعية أو لأنظمة وسياسة الدولة.</li>
+          <li>الحصول على فترات راحة مناسبة.</li>
+          <li>الحرص على أمن وسلامة المتطوع.</li>
+        </ol>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <img class="section-image rounded img-fluid " src="images/a18i7476.webp" alt="Image">
+      </div>
+      </div>
+  </div>
+
+  <div class="container py-5 ">
+    <h1 class="p-2 bg-light border rounded text-center mb-3"> لماذا نتطوع ؟ </h1>
+    <div class="row">
+      <div class="col-md-4 col-lg-3 mt-2">
+        <div class="gallery-item">
+          <img src="images/Carousel_Placeholder1.png" alt="Image 1">
+          <div class="image-name pt-5">الرضى عن النفس</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-6 mt-2">
+        <div class="gallery-item">
+          <img src="images/Carousel_Placeholder2.png" alt="Image 2">
+          <div class="image-name pt-5">  توسيع دائرة معارفك والتعرف بأصدقاء جدد
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3 mt-2 ">
+        <div class="gallery-item ">
+          <img src="images/Carousel_Placeholder3.png" alt="Image 3">
+          <div class="image-name pt-5"> يجعلك شخص افضل من الناحية العقلية والبدنية 
+          </div>
+        </div>
+      </div>
+      <!-- Add more gallery items as needed -->
+    </div>
+  </div>
+
+  <div class="container bg-lightp-5 ">
+    <h1 class="p-2 bg-light border rounded text-center mb-3">   الأثر العائد على المجتمع
+    </h1>
+    <div class="row">
+      <div class="col-md-6 text-right mt-3">
+        <div class="volunteer-impact">
+          <img src="images/Carousel_Placeholder2.png" class="gallery-item2 " alt="أهمية العمل التطوعي وأثره على المجتمع">
+          <h3 class="pt-3">أهمية العمل التطوعي وأثره على المجتمع</h3>
+          <ul>
+            <li>تنمية مهاراته الحياتية.</li>
+            <li>التقرب إلى الله بفعل الخيرات.</li>
+            <li>تعلم أشياء جديدة، وزيادة خبراته، ومن الممكن استخدام ذلك في سيرته الذاتية.</li>
+            <li>تعزيز ثقته بنفسه، وقدرته على اتخاذ القرارات.</li>
+            <li>الشعور بالتعاطف تجاه الآخرين، وتقديم المساعدة المناسبة حسب الموقف.</li>
+            <li>توسيع دائرة العلاقات الاجتماعية.</li>
+            <li>الشعور بالإنجاز، والرضا تجاه نفسه، وبمدى تأثيره على حياة الآخرين.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 text-right mt-3">
+        <div class="volunteer-impact">
+          <img src="images/Carousel_Placeholder3.png" class="gallery-item2 " alt="الأثر العائد على المجتمع">
+          <h3 class="pt-3">الأثر العائد على المجتمع</h3>
+          <ul >
+            <li>تحسين حياة الأفراد الذين يستفيدون من الأعمال الخيرية المقدمة لهم.</li>
+            <li>تحفيز الشعور بالتعاون والإخاء تجاه المجتمع وأفراده.</li>
+            <li>تطوير البنية التحتية؛ من خلال الأعمال التطوعية الإنشائية.</li>
+            <li>تخفيف الأعباء على الحكومات.</li>
+            <li>زيادة الشعور بالانتماء.</li>
+            <li>نشر ثقافة العطاء.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer p-5 bg-light border mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Address: 123 Main Street, City, Country</p>
+          <p>Email: info@company.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/logovirsion.png" width="150px" alt="">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="col-md-4">
+          Gentertions of copyright
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
