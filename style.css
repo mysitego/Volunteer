@@ -103,6 +103,13 @@ body{
 color:#237546;
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+ 
+}
 
 @media (max-width: 768px) {
  
